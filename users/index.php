@@ -1,6 +1,6 @@
 <?php require_once '../templates/header.php'; ?>
 <h1>All Users</h1>
-<a href="/users/edit.php">Tambah user</a>
+<a href="/users/tambah.php">Tambah user</a>
 <br>
 <br>
 <table border="1">

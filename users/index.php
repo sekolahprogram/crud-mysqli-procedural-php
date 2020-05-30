@@ -25,6 +25,7 @@
             <td><?= $user->password; ?></td>
             <td>
                 <a href="/users/edit.php?id=<?= $user->id; ?>">Edit</a>
+                <a href="/users/show.php?id=<?= $user->id; ?>">Show</a>
                 <a href="/users/?hapus&id=<?= $user->id; ?>">Hapus</a>
             </td>
         </tr>

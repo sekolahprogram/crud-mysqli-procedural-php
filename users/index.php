@@ -31,4 +31,15 @@
         <?php } ?>
     </tbody>
 </table>
-<?php require_once '../templates/footer.php'; ?>
+<?php
+
+if (isset($_GET['hapus'])) {
+    if ($_GET['id']) {
+        $query = "DELETE FROM users WHERE id = " . $_GET['id'];
+        if (mysqli_query($conn, $query)) {
+            header('Location:/users');
+        }
+    }
+}
+
+require_once '../templates/footer.php'; ?>
